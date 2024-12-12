@@ -1,0 +1,23 @@
+# Terraform files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Python files
+*.pyc
+__pycache__/
+
+# Docker files
+*.log
+*.tmp
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Secrets (if any)
+*.env
