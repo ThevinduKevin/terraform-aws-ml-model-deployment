@@ -6,10 +6,10 @@ terraform {
         }
     }
     backend "s3" {
-        bucket = "ML-terraform-state"
-        key    = "ML-terraform.tfstate"
+        bucket = "ml-terraform-state-bucket-thev"
+        key    = "ml-terraform.tfstate"
         region = "ap-south-1"
-        dynamodb_table = "ML-terraform-state-lock"
+        dynamodb_table = "ml-terraform-state-lock"
     }
 }
 
