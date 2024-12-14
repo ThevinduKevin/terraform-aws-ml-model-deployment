@@ -23,7 +23,7 @@ module "s3" {
 
 module "ec2" {
     source = "./modules/ec2"
-    image_url = module.ecr.image_url
+    image_url = module.ec2.image_url
 }
 
 module "ecr" {
