@@ -17,11 +17,11 @@ module "s3" {
     source = "./modules/s3" 
 }
 
-module "ec2" {
-    source = "./modules/ec2"
-    image_url = module.ec2.image_url
-}
-
 module "ecr" {
     source = "./modules/ecr"
+}
+
+module "ec2" {
+    source = "./modules/ec2"
+    image_url = module.ecr.repository_url
 }
